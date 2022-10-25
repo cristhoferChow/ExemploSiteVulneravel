@@ -1,7 +1,7 @@
 <?php
     require("../banco/conecta.php");
     session_start();
-    $senha = $_POST['senha'];
+    $senha =  MD5(strval ($_POST['senha']));
     $login = $_POST['usuario'];
     
     $query = "SELECT * FROM tb_admin WHERE nm_admin ='$login' AND ds_senha = '$senha'";

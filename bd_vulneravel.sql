@@ -38,7 +38,7 @@ CREATE TABLE `tb_admin` (
 --
 
 INSERT INTO `tb_admin` (`cd_admin`, `nm_admin`, `ds_senha`) VALUES
-(1, 'admin', '123456');
+(1, 'admin', 'e10adc3949ba59abbe56e057f20f883e');
 
 --
 -- Índices para tabelas despejadas
