@@ -6,9 +6,9 @@
     
     $query = "SELECT * FROM tb_admin WHERE nm_admin ='$login' AND ds_senha = '$senha'";
     $result = mysqli_query($conexao, $query);
-    echo $query;
+    
     if(mysqli_num_rows($result)==1){
-        $_SESSION['acesso'] = "admin";
+        $_SESSION['acesso'] = $login;
         header('location:../inicio.php');
     }else{
          header('location:../index.php');
