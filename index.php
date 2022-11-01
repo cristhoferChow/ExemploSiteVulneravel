@@ -20,7 +20,7 @@
                     <div class="col-md-12">
                         <div class="form-group">
                             <label for="usuario">Usuário</label>
-                            <input type="text" name="usuario" class="form-control" id="usuario"/>
+                            <input type="text" name="usuario" class="form-control" id="usuario" pattern="[^'\x22]+"/>
                         </div>
                     </div>
                 </div>
@@ -28,7 +28,7 @@
                     <div class="col-md-12">
                         <div class="form-group">
                             <label for="Senha">Senha</label>
-                            <input type="password" name="senha" class="form-control" id="senha"/>
+                            <input type="password" name="senha" class="form-control" id="senha" pattern="[^'\x22]+"/>
                         </div>
                     </div>
                 </div>
